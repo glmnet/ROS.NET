@@ -524,9 +524,9 @@ namespace Uml.Robotics.Ros.ActionLib
             }
 
             Time timestamp = statusArray.header.stamp;
-            ROS.Debug()($"Getting status over the wire (callerid: {callerId}; count: " +
-                $"{statusArray.status_list.Length})."
-            );
+            //ROS.Debug()($"Getting status over the wire (callerid: {callerId}; count: " +
+            //    $"{statusArray.status_list.Length})."
+            //);
 
             Dictionary<string, ClientGoalHandle<TGoal, TResult, TFeedback>> goalHandlesReferenceCopy;
 
